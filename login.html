@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="ostec">OSTEC ARQUITECTOS</h1>
+    <div class="container">
+        <div class="left-section">
+            <div class="greeting-container">
+                <h2 class="si">Hi There!</h2>
+                <p class="grey">Welcome to OSTEC</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="button-container">
+                    <img src="./img/google.png" alt="Google Icon" class="button-icon">
+                    <button type="button" class="google-login">Google</button>
+                </div>
+                <p class="greys">— or —</p>
+                <div class="input-container">
+                    <img src="./img/correo.png" alt="Email Icon" class="input-icon">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-container">
+                    <img src="./img/candado.png" alt="Password Icon" class="input-icon">
+                    <input type="password" id="password" placeholder="Your Password" required>
+                </div>
+                <div class="forgot-password-container">
+                    <a class="pass">Forgot password <span class="koulen">?</span></a>
+                </div>
+                <button type="submit" class="login-btn">Log In</button>
+                <p class="account">
+                    Don’t have an account <span class="koulen">?</span> 
+                    <a href="signup.html" class="sign-up-btn">Sign Up</a>
+                </p>                    
+            </form>            
+        </div>
+
+        <div class="right-section">
+            <img src="./img/inspectors-2023_01_24_130405@2x.jpg" alt="">
+            <p>Innovación y diseño en cada proyecto.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email === "jenny@gmail.com" && password === "123") {
+                window.location.href = "ostec.html";
+            } else {
+                alert("Email o contraseña incorrectos.");
+            }
+        });
+    </script>
+</body>
+</html>

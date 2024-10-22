@@ -1,0 +1,407 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+}
+.fondo{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar .cta {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.content p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+/*SERVICIOS*/
+.ostec-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ostec-section {
+    display: flex;
+    margin-bottom: 0;
+    border: 1px solid rgba(188, 171, 174, 1);
+}
+
+.ostec-section img {
+    width: 50%;
+    height: auto;
+    border-right: 1px solid rgba(188, 171, 174, 1);
+}
+
+.ostec-section .ostec-content {
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(45, 46, 46, 1);
+}
+
+.ostec-section .ostec-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.ostec-section .ostec-content ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.ostec-section .ostec-content ul li {
+    margin-bottom: 10px;
+}
+
+.ostec-section .ostec-content button {
+    padding: 10px 20px;
+    background-color: rgba(113, 105, 105, 1);
+    border: none;
+    color: rgba(45, 46, 46, 1);
+    cursor: pointer;
+}
+
+.ostec-features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    border: 1px solid rgba(188, 171, 174, 1);
+    border-top: none;
+}
+
+.ostec-features .ostec-feature {
+    width: 24%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(45, 46, 46, 1);
+    border-right: 1px solid rgba(188, 171, 174, 1);
+}
+
+.ostec-features .ostec-feature:last-child {
+    border-right: none;
+}
+
+.ostec-features .ostec-feature i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: rgba(113, 105, 105, 1);
+}
+
+.ostec-about {
+    display: flex;
+    border: 1px solid rgba(188, 171, 174, 1);
+    border-top: none;
+}
+
+.ostec-about .ostec-content {
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(45, 46, 46, 1);
+    border-right: 1px solid rgba(188, 171, 174, 1);
+}
+
+.ostec-about .ostec-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.ostec-about .ostec-content p {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.ostec-about img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cafe{
+    font-size: 18px;
+    margin: 10px 0 0;
+    color: rgba(113, 105, 105, 1);
+}
+
+#cafe{
+    font-size: 18px;
+    color: rgba(113, 105, 105, 1);
+}
+
+.o{
+    margin-top: -9px;
+    background-color: rgba(45, 46, 46, 1);
+}
+
+.ostec-content{
+    gap: 50%;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.ui{
+    text-align: justify;
+}
+
+.masinfo{
+    margin: 40px;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    width: 240px;
+}
+
+.servicios {
+    list-style-type: none; 
+    padding: 0; 
+    text-align: center; 
+}
+
+.servicios li {
+    text-align: center; 
+    margin: 2px 0; 
+    display: inline-block; 
+    width: 100%; 
+}
+
+.ab{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+}
+
+/*PROYECTOS*/
+.project-container {
+    text-align: center;
+}
+
+.project-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: justify;
+}
+
+.project-left-column, .project-right-column {
+    margin: 10px;
+}
+
+.project-left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-left-column img {
+    width: 222px;
+    height: 268px;
+    margin-bottom: 46px;
+}
+
+.project-right-column img {
+    margin-left: 43px;
+    width: 627px;
+    height: 423px;
+}
+
+.button-area {
+    margin-top: 40px;
+}
+
+.view-button {
+    background-color: rgba(113, 105, 105, 1);
+    color: rgba(45, 46, 46, 1);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.project-left-column #pom {
+    width: 223px;
+    height: 110px;
+    margin-bottom: 40px;
+}
+
+/*TESTIMONIOS Y CONTACTO*/
+.testimonial-contact-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.testimonial-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    background-color: rgba(45, 46, 46, 1);
+    padding: 20px;
+    border: 1px solid rgba(188, 171, 174, 1);
+    width: 30%;
+}
+
+.testimonial:first-child {
+    background-color: rgba(188, 171, 174, 1);
+    color: #ffffff;
+}
+
+.testimonial h2 {
+    margin-top: 30%;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info, .contact-form, .contact-links {
+    width: 30%;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.contact-info p, .contact-info a {
+    margin: 10px 0;
+}
+
+.contact-form input, .contact-form button {
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    font-size: 1vw;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(113, 105, 105, 1);
+    background-color: rgba(45, 46, 46, 1);
+    color: #e0e0e0;
+}
+
+.contact-form button {
+    background-color: rgba(217, 217, 217, 1);
+    color: rgba(45, 46, 46, 1);
+    cursor: pointer;
+    width: 104%;
+}
+.contact-links{
+    text-align: right;
+}
+.contact-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.contact-links ul li {
+    margin: 10px 0;
+}
+
+.contact-links ul li a {
+    color: rgba(113, 105, 105, 1);
+    text-decoration: none;
+}
+
+.contact-links button {
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    font-size: 1vw;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(217, 217, 217, 1);
+    border: none;
+    color: rgba(45, 46, 46, 1);
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+}
+.centre{
+    text-align: center;
+}
+.rosa{
+    color:rgba(188, 171, 174, 1);
+}
+.blanco{
+    color: white;
+}
+.color{
+    color:rgba(113, 105, 105, 1)
+}

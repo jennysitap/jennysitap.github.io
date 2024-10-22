@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    background-color: #ffffff;
+}
+
+p {
+    font-size: 1vw;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    color: rgba(113, 105, 105, 1);
+}
+ 
+.container {
+    display: flex;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+}
+
+.left-section {
+    flex: 1;
+    padding: 3%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ostec {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    font-size: 1.3vw;
+    color: rgba(45, 46, 46, 1);
+}
+
+.greeting-container {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.si {
+    font-size: 3.5vw;
+    color: rgba(45, 46, 46, 1);
+    margin: 0; 
+}
+
+.grey {
+    margin: -30px; 
+    margin-bottom: 15px;
+    font-size: 1.6vw;
+    color: rgba(113, 105, 105, 1);
+}
+
+.greys {
+    font-size: 1.5vw;
+    color: rgba(113, 105, 105, 1);
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    position: relative; 
+    width: 101%; 
+    margin-bottom: 10px; 
+}
+
+.button-icon {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+}
+
+.google-login {
+    color: #716969;
+    text-align: left;
+    background-color: #ffffff;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #716969;
+    border-radius: 10px;
+    font-size: 1vw;
+    width: 100%;
+}
+
+.input-container {
+    position: relative; 
+    width: 80%; 
+    margin-bottom: 10px; 
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+}
+
+form input {
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #716969;
+    border-radius: 10px;
+    font-size: 1vw;
+    width: 100%;
+}
+
+.koulen {
+    font-family: 'Koulen', sans-serif;
+}
+
+.pass {
+    color: rgba(111, 132, 241, 1);
+    text-decoration: none;
+    font-size: 1vw;
+    display: inline-block;
+    text-align: right; 
+    margin-top: 5px; 
+    margin-bottom: 20px;
+}
+
+.forgot-password-container {
+    text-align: right;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+
+.login-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1.2vw;
+}
+
+.account {
+    color: rgba(0, 0, 0, 1);
+    font-size: 1vw;
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.sign-up-btn {
+    color: rgba(111, 132, 241, 1);
+    text-decoration: none;
+    margin-left: 2px;
+}
+
+.right-section {
+    flex: 1;
+    position: relative;
+    background-color: white;
+}
+
+.right-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.right-section p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 1.5vw;
+}
+

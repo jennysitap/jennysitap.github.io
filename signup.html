@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="right-section">
+            <div class="greeting-container">
+                <h2 class="sis">Create an</h2>
+                <p class="si">account</p>
+            </div>
+            <p class="account">
+                Already have an account <span class="koulen">?</span> 
+                <a href="login.html" class="sign-up-btn">Log In</a>
+            </p>
+
+                <form id="nameForm" class="name-form">
+                    <div class="aaa">
+                        <div class="input-container">
+                            <input type="text" id="firstName" placeholder="First Name" required>
+                        </div>
+                        <div class="input-container">
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                        </div>
+                       </div>    
+                </form>          
+         
+            <form id="loginForm" class="login-form"> 
+                <div class="aaa">
+                <div class="input-container">
+                    <img src="./img/correo.png" alt="Email Icon" class="input-icon">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-container">
+                    <img src="./img/candado.png" alt="Password Icon" class="input-icon">
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+            </div>
+                <button type="submit" class="login-btn">Sign Up</button> 
+
+                <p class="greys">— or —</p>
+
+                <div class="aaa">
+                     <div class="button-container">
+                        <img src="./img/Google_Homepage.svg.png" alt="Google Icon" class="button-icon">
+                        <button type="button" class="google-login">Google</button>
+                    </div>
+                    <div class="button-container">
+                        <img src="./img/t38_c3_a1_p1.png" alt="Outlook Icon" class="button-icon">
+                        <button type="button" class="outlook-login">Outlook</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="left-section">
+            <img src="./img/architects-concept-engineer-architect-designer-600nw-2509426597.jpg" alt="">
+            <p>Haz realidad tus sueños con nosotros.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email === "jenny@gmail.com" && password === "123") {
+                window.location.href = "ostec.html";
+            } else {
+                alert("Email o contraseña incorrectos.");
+            }
+        });
+    </script>
+</body>
+</html>
