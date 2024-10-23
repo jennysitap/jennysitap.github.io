@@ -179,3 +179,129 @@ form input {
     font-size: 1.5vw;
 }
 
+/*Para celular*/
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Agrega un padding general */
+    }
+
+    p {
+        font-size: 4vw; /* Aumenta el tamaño de la fuente en pantallas pequeñas */
+    }
+    
+    .greeting-container {
+        margin-right: 9%;
+        margin-top: 10%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        flex-direction: column; /* Cambia a columna para móviles */
+        height: auto; /* Permite que el contenedor se ajuste al contenido */
+    }
+
+    .left-section {
+        padding: 5%; /* Aumenta el padding para más espacio */
+        align-items: center; /* Centra los elementos */
+        display: flex; /* Usa flexbox */
+        flex-direction: column; /* Coloca los elementos en columna */
+        width: 100%; /* Asegura que ocupe el ancho completo */
+        text-align: center; /* Centra el texto dentro de la sección */
+    }
+
+    .ostec {
+        font-size: 0; /* Ajusta el tamaño de fuente */
+    }
+
+    .si {
+        font-size: 8vw; /* Aumenta el tamaño de fuente para el título */
+        margin: 20px 0; /* Agrega margen superior para moverlo hacia abajo */
+        text-align: center; /* Centra el texto */
+    }
+
+    .grey, .greys {
+        font-size: 4vw; /* Ajusta tamaños */
+        text-align: center; /* Centra el texto */
+    }
+
+    .button-container {
+        width: 100%; /* Asegura que el botón use el 100% del ancho */
+        margin: 10px 0; /* Espacio entre botones */
+        display: flex; /* Usa flexbox para alinear botones */
+        flex-direction: column; /* Coloca botones en columna */
+        align-items: center; /* Centra los botones */
+    }
+
+    form input {
+        font-size: 4vw; /* Ajusta el tamaño de los botones y campos de entrada */
+        padding: 10px; /* Ajusta padding para hacer botones más pequeños */
+        border-radius: 15px; /* Cambia el borde para un aspecto más moderno */
+        width: 90%; /* Asegura que los botones ocupen el ancho completo */
+        display: flex; /* Usar flex para alinear contenido */
+        align-items: center; /* Centra el contenido en el botón */
+        justify-content: center; /* Centra el contenido horizontalmente */
+        margin: 5px 0; /* Espacio entre botones */
+        overflow: hidden; /* Asegura que nada se desborde */
+    }
+
+    .login-btn {
+        font-size: 4vw; /* Ajusta el tamaño de los botones y campos de entrada */
+        padding: 10px; /* Ajusta padding para hacer botones más pequeños */
+        border-radius: 15px; /* Cambia el borde para un aspecto más moderno */
+        width: 100%; /* Asegura que los botones ocupen el ancho completo */
+        display: flex; /* Usar flex para alinear contenido */
+        align-items: center; /* Centra el contenido en el botón */
+        justify-content: center; /* Centra el contenido horizontalmente */
+        margin: 5px 0; /* Espacio entre botones */
+        overflow: hidden; /* Asegura que nada se desborde */
+    }
+
+
+    .google-login {
+        font-size: 4vw; 
+        padding: 10px; 
+        border-radius: 15px; 
+        width: 100%;
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        margin: 5px 0; 
+        overflow: hidden; 
+    }
+
+    .google-login img {
+        width: 20px; /* Ajusta el tamaño de la imagen */
+        height: auto; /* Mantiene la relación de aspecto */
+        max-width: 100%; /* Asegura que la imagen no se desborde */
+        margin-right: 8px; /* Espacio entre imagen y texto */
+    }
+
+    .input-container {
+        width: 90%; /* Asegura que ocupe un poco menos que el ancho completo */
+        margin-bottom: 10px; /* Espacio entre campos de entrada */
+    }
+
+    form input {
+        padding-left: 40px; /* Espacio para el icono */
+    }
+
+    .pass, .account {
+        font-size: 4vw; /* Ajusta tamaño */
+    }
+
+    .forgot-password-container {
+        text-align: right; /* Centra el texto en móviles */
+    }
+
+    .right-section {
+        display: none; /* Elimina la sección derecha */
+    }
+
+    form {
+        margin-right: 9%;
+        display: block;
+        margin-top: 0em;
+        unicode-bidi: isolate;
+    }
+}
