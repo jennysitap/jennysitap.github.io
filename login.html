@@ -58,7 +58,9 @@
 
             if (email === "jenny@gmail.com" && password === "123") {
                 window.location.href = "ostec.html";
-            } else {
+            }else if (email === "admin@gmail.com" && password === "admin") {
+                window.location.href = "./dashboard/admin.html";
+            }else {
                 alert("Email o contraseña incorrectos.");
             }
         });
