@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lenguajes y Autómatas II</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-book-half"></i> Lenguajes y Autómatas II</a>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="bg-light py-5 text-center">
+    <div class="container">
+      <h1 class="display-4">Bienvenido al Temario</h1>
+      <p class="lead">Explora cada unidad para conocer los temas más importantes del curso de manera sencilla e intuitiva.</p>
+    </div>
+  </header>
+
+  <!-- Botones de Unidades -->
+  <section class="container text-center my-5">
+    <h2 class="mb-4">Unidades del Curso</h2>
+    <div class="d-grid gap-3 col-6 mx-auto">
+      <a href="#unidad1" class="btn btn-outline-primary btn-lg"><i class="bi bi-diagram-3"></i> Unidad 1: Análisis Semántico</a>
+      <a href="#unidad2" class="btn btn-outline-success btn-lg"><i class="bi bi-code-slash"></i> Unidad 2: Código Intermedio</a>
+      <a href="#unidad3" class="btn btn-outline-warning btn-lg"><i class="bi bi-lightning-charge"></i> Unidad 3: Optimización</a>
+      <a href="#unidad4" class="btn btn-outline-danger btn-lg"><i class="bi bi-cpu"></i> Unidad 4: Código Objeto</a>
+    </div>
+  </section>
+
+<main class="container py-4">
+<!-- Unidad 1: Análisis Semántico -->
+<section id="unidad1" class="mb-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title text-primary"><i class="bi bi-diagram-3-fill"></i> Unidad 1: Análisis Semántico</h2>
+        <p>En esta unidad se estudia cómo los compiladores interpretan el significado de los programas, no solo su estructura gramatical. El análisis semántico valida y transforma la información del análisis sintáctico para continuar el proceso de compilación.</p>
+  
+        <div class="accordion" id="accordionUnidad1">
+  
+          <!-- Tema 1.1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema11">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#contenido11">
+                1.1 Árboles de expresiones
+              </button>
+            </h2>
+            <div id="contenido11" class="accordion-collapse collapse show" data-bs-parent="#accordionUnidad1">
+              <div class="accordion-body justificado">
+                Son estructuras jerárquicas que representan la organización de una expresión según las reglas gramaticales. Cada nodo representa una operación y sus hijos los operandos.
+                <br><strong>Ejemplo:</strong> La expresión <code>a + b * c</code> se convierte en un árbol donde la raíz es '+' y tiene como hijos 'a' y el subárbol de 'b * c'.
+              </div>
+            </div>
+          </div>
+  
+          <!-- Tema 1.2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema12">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenido12">
+                1.2 Acciones semánticas de un analizador sintáctico
+              </button>
+            </h2>
+            <div id="contenido12" class="accordion-collapse collapse" data-bs-parent="#accordionUnidad1">
+              <div class="accordion-body">
+                Son instrucciones que se ejecutan mientras se analiza la estructura gramatical del programa. Ayudan a construir árboles, generar código intermedio o llenar tablas de símbolos.
+              </div>
+            </div>
+          </div>
+  
+          <!-- Tema 1.3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema13">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenido13">
+                1.3 Comprobaciones de tipos en expresiones
+              </button>
+            </h2>
+            <div id="contenido13" class="accordion-collapse collapse" data-bs-parent="#accordionUnidad1">
+              <div class="accordion-body">
+                Verifican que los operandos usados en expresiones sean compatibles (por ejemplo, no sumar una cadena con un número). Ayuda a detectar errores en tiempo de compilación.
+              </div>
+            </div>
+          </div>
+  
+          <!-- Tema 1.4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema14">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenido14">
+                1.4 Pila semántica en un analizador sintáctico
+              </button>
+            </h2>
+            <div id="contenido14" class="accordion-collapse collapse" data-bs-parent="#accordionUnidad1">
+              <div class="accordion-body">
+                Es una estructura auxiliar utilizada para almacenar información semántica temporal durante el análisis. Sirve para construir árboles de sintaxis abstracta o realizar traducciones.
+              </div>
+            </div>
+          </div>
+  
+          <!-- Tema 1.5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema15">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenido15">
+                1.5 Esquema de traducción
+              </button>
+            </h2>
+            <div id="contenido15" class="accordion-collapse collapse" data-bs-parent="#accordionUnidad1">
+              <div class="accordion-body">
+                Es la combinación de reglas gramaticales con acciones semánticas. Permite traducir el código fuente en una representación intermedia u otra forma útil durante el análisis.
+              </div>
+            </div>
+          </div>
+  
+          <!-- Tema 1.6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema16">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenido16">
+                1.6 Generación de la tabla de símbolos y tabla de direcciones
+              </button>
+            </h2>
+            <div id="contenido16" class="accordion-collapse collapse" data-bs-parent="#accordionUnidad1">
+              <div class="accordion-body">
+                La tabla de símbolos almacena información sobre variables, funciones y tipos. La tabla de direcciones se encarga de gestionar las ubicaciones de memoria donde se almacenan esos datos.
+              </div>
+            </div>
+          </div>
+  
+          <!-- Tema 1.7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema17">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenido17">
+                1.7 Manejo de errores semánticos
+              </button>
+            </h2>
+            <div id="contenido17" class="accordion-collapse collapse" data-bs-parent="#accordionUnidad1">
+              <div class="accordion-body">
+                Detecta errores que no pueden encontrarse durante el análisis sintáctico, como uso de variables no declaradas o incompatibilidades de tipo. Permite que el compilador brinde mensajes claros.
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Imagen -->
+        <div class="text-center mt-4">
+          <img src="img/arbolExpresiones.gif" class="img-fluid rounded shadow" style="max-width: 500px;" alt="Árbol de expresiones">
+          <p class="text-muted">Figura: Representación de un árbol de expresiones</p>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Unidad 2: Generación de Código Intermedio -->
+<section id="unidad2" class="mb-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title text-success"><i class="bi bi-code-slash"></i> Unidad 2: Generación de Código Intermedio</h2>
+        <p>Esta unidad se centra en las distintas representaciones del código intermedio que permiten transformar el código fuente a un formato más abstracto antes de generar código objeto. También se analiza cómo traducir instrucciones y estructuras del lenguaje original.</p>
+  
+        <div class="accordion" id="accordionUnidad2">
+  
+          <!-- Tema 2.1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema21">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#contenido21">
+                2.1 Notaciones: Prefija, Infija, Postfija
+              </button>
+            </h2>
+            <div id="contenido21" class="accordion-collapse collapse show" data-bs-parent="#accordionUnidad2">
+              <div class="accordion-body">
+                <strong>Prefija:</strong> El operador aparece antes de los operandos. Ej: <code>+ a b</code><br>
+                <strong>Infija:</strong> El operador se coloca entre los operandos. Ej: <code>a + b</code><br>
+                <strong>Postfija:</strong> El operador aparece después de los operandos. Ej: <code>a b +</code><br>
+                Estas notaciones son útiles en etapas de análisis y generación de expresiones.
+              </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/PgZfeEZZnxg?si=3hOFGPkAU3XGpTvH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+  
+          <!-- Tema 2.2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema22">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenido22">
+                2.2 Representaciones de código intermedio
+              </button>
+            </h2>
+            <div id="contenido22" class="accordion-collapse collapse" data-bs-parent="#accordionUnidad2">
+              <div class="accordion-body">
+                <ul>
+                  <li><strong>2.2.1 Notación Polaca:</strong> También conocida como notación prefija, útil en lenguajes funcionales.</li>
+                  <li><strong>2.2.2 Código P:</strong> Representación usada por máquinas abstractas (como la P-Machine).</li>
+                  <li><strong>2.2.3 Triplos:</strong> Estructura con tres elementos (operador, argumento1, argumento2), sin nombres temporales.</li>
+                  <li><strong>2.2.4 Cuádruplos:</strong> Similar a los triplos pero incluye un campo para el resultado.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Tema 2.3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema23">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenido23">
+                2.3 Esquema de generación
+              </button>
+            </h2>
+            <div id="contenido23" class="accordion-collapse collapse" data-bs-parent="#accordionUnidad2">
+              <div class="accordion-body">
+                La generación del código intermedio debe seguir un esquema para garantizar que las estructuras del lenguaje fuente se traduzcan correctamente:
+                <ul>
+                  <li><strong>2.3.1 Variables y constantes:</strong> Declaración y acceso se deben traducir con referencias intermedias.</li>
+                  <li><strong>2.3.2 Expresiones:</strong> Las operaciones se convierten en instrucciones secuenciales.</li>
+                  <li><strong>2.3.3 Instrucción de asignación:</strong> Se genera una instrucción intermedia que representa el movimiento de valores.</li>
+                  <li><strong>2.3.4 Instrucciones de control:</strong> Condicionales y ciclos se traducen en saltos y etiquetas.</li>
+                  <li><strong>2.3.5 Funciones:</strong> Llamadas, parámetros y valores de retorno se traducen como bloques independientes.</li>
+                  <li><strong>2.3.6 Estructuras:</strong> Se representan con apuntadores, estructuras de datos u offsets.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Imagen de ejemplo -->
+        <div class="text-center mt-4">
+          <img src="img/codigoint.jpg" class="img-fluid rounded shadow" style="max-width: 500px;" alt="Ejemplo de cuádruplos">
+          <p class="text-muted">Figura: Representación de código intermedio</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Unidad 3: Optimización -->
+<section id="unidad3" class="mb-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title text-warning"><i class="bi bi-graph-up-arrow"></i> Unidad 3: Optimización</h2>
+        <p>En esta unidad se estudian las técnicas utilizadas para mejorar la eficiencia del código intermedio, reduciendo su tamaño y aumentando su velocidad sin modificar su funcionalidad.
+            Las optimizaciones pueden realizarse de diferentes formas. Las optimizaciones se realizan en base al alcance ofrecido por el compilador. La optimización va a depender del lenguaje de programación y es directamente
+            proporcional al tiempo de compilación; es decir, entre más optimización mayor
+            tiempo de compilación. 
+        </p>
+  
+        <div class="accordion" id="accordionUnidad3">
+  
+          <!-- Tema 3.1 Tipos de optimización -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema31">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#contenido31">
+                3.1 Tipos de optimización
+              </button>
+            </h2>
+            <div id="contenido31" class="accordion-collapse collapse show" data-bs-parent="#accordionUnidad3">
+              <div class="accordion-body">
+                <p>Dentro de los tipos de optimización se derivan los tipos de optimización local,
+                    optimización de ciclo, optimización global y optimización de mirilla.</p>
+                <ul>
+                  <li><strong>3.1.1 Locales:</strong> Se aplican en bloques de código individuales, por ejemplo, eliminar instrucciones redundantes. La característica de las optimizaciones locales es que solo se ven reflejados en
+                    dichas secciones.</li>
+                  <li><strong>3.1.2 Ciclos:</strong> Buscan mejorar el rendimiento dentro de bucles, como mover código fuera del ciclo si no cambia. El problema de la optimización en ciclos y en general radica es que muy difícil
+                    saber el uso exacto de algunas instrucciones.</li>
+                  <li><strong>3.1.3 Globales:</strong> Consideran el programa completo, por ejemplo, eliminar variables que nunca se usan. La optimización global se da con respecto a todo el código. Este tipo de
+                    optimización es más lenta pero mejora el desempeño general de todo programa.
+                    Las optimizaciones globales pueden depender de la arquitectura de la máquina.</li>
+                  <li><strong>3.1.4 De mirilla:</strong> Examina pequeñas ventanas del código para aplicar reemplazos simples y rápidos.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Tema 3.2 Costos -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema32">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenido32">
+                3.2 Costos y criterios de mejora
+              </button>
+            </h2>
+            <div id="contenido32" class="accordion-collapse collapse" data-bs-parent="#accordionUnidad3">
+              <div class="accordion-body">
+                <ul>
+                  <li><strong>3.2.1 Costo de ejecución:</strong> Los costos de ejecución son aquellos que vienen implícitos al ejecutar el
+                    programa. Incluye el uso de memoria, registros y pilas. El objetivo es minimizar recursos y tiempo. Las aplicaciones multimedia como los videojuegos tienen un costo de ejecución
+                    alto por lo cual la optimización de su desempeño es crítico, la gran mayoría de las
+                    veces requieren de procesadores rápidos (e.g. tarjetas de video) o de mucha
+                    memoria. Otro tipo de aplicaciones que deben optimizarse son las aplicaciones
+                    para dispositivos móviles.</li>
+                  <li><strong>3.2.2 Criterios de mejora:</strong> La mejor manera de optimizar el código es hacer ver a los programadores que
+                    optimicen su código desde el inicio, el problema radica en que el costo podría ser
+                    muy grande ya que tendría que codificar más y/o hacer su código más legible. Los
+                    criterios de optimización siempre están definidos por el compilador. Minimizar instrucciones, evitar saltos innecesarios, y usar registros eficientes.</li>
+                  <li><strong>3.2.3 Herramientas de análisis de flujo de datos:</strong> Existen algunas herramientas que permiten el análisis de los flujos de datos, entre
+                    ellas tenemos los depuradores y desambladores. La optimización al igual que la
+                    programación es un arte y no se ha podido sistematizar del todo. Permiten detectar variables muertas, dependencias y posibles mejoras automáticas en compiladores.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Imagen ilustrativa -->
+        <div class="text-center mt-4">
+          <img src="img/control_flow_graph.jpg" class="img-fluid rounded shadow" style="max-width: 500px;" alt="Optimización de código">
+          <p class="text-muted">Figura: Ejemplo de optimización eliminando instrucciones redundantes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Unidad 4: Generación de Código Objeto -->
+<section id="unidad4" class="mb-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title text-danger"><i class="bi bi-cpu"></i> Unidad 4: Generación de Código Objeto</h2>
+        <p>Esta unidad se enfoca en transformar el código intermedio optimizado en código objeto, el cual puede ser entendido y ejecutado directamente por una máquina.</p>
+  
+        <div class="accordion" id="accordionUnidad4">
+  
+          <!-- Tema 4.1 Registros -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema41">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#contenido41">
+                4.1 Registros
+              </button>
+            </h2>
+            <div id="contenido41" class="accordion-collapse collapse show" data-bs-parent="#accordionUnidad4">
+              <div class="accordion-body">
+                Los registros son espacios de almacenamiento interno del procesador usados para almacenar datos temporales. Su uso eficiente es esencial en la generación de código objeto. Se utilizan para operaciones aritméticas, direcciones de memoria, valores intermedios y acumuladores.
+              </div>
+            </div>
+          </div>
+  
+          <!-- Tema 4.2 Lenguaje ensamblador -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema42">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenido42">
+                4.2 Lenguaje ensamblador
+              </button>
+            </h2>
+            <div id="contenido42" class="accordion-collapse collapse" data-bs-parent="#accordionUnidad4">
+              <div class="accordion-body">
+                Es un lenguaje de bajo nivel que utiliza mnemónicos para representar instrucciones de la máquina. Aunque no es ejecutado directamente por el procesador, se traduce fácilmente a lenguaje máquina y permite control directo sobre el hardware.
+              </div>
+            </div>
+          </div>
+  
+          <!-- Tema 4.3 Lenguaje máquina -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema43">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenido43">
+                4.3 Lenguaje máquina
+              </button>
+            </h2>
+            <div id="contenido43" class="accordion-collapse collapse" data-bs-parent="#accordionUnidad4">
+              <div class="accordion-body">
+                Es el lenguaje binario directamente ejecutado por el CPU. Cada instrucción está compuesta por códigos de operación (opcode) y operandos, específicos de la arquitectura del procesador.
+                Existen más de 8000 lenguajes de programación, pero solo unos pocos son fundamentales en la industria. Python, C++, Java, C y C# son actualmente los lenguajes más utilizados. Las pruebas de codificación independientes del lenguaje son útiles para encontrar desarrolladores versátiles.
+              </div>
+            </div>
+          </div>
+  
+          <!-- Tema 4.4 Administración de memoria -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tema44">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contenido44">
+                4.4 Administración de memoria
+              </button>
+            </h2>
+            <div id="contenido44" class="accordion-collapse collapse" data-bs-parent="#accordionUnidad4">
+              <div class="accordion-body">
+                Incluye la asignación y liberación de espacio en memoria para variables, estructuras y funciones. Se deben manejar adecuadamente la pila (stack), el montón (heap) y el segmento de datos para evitar fugas y errores en tiempo de ejecución.
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Imagen ilustrativa -->
+        <div class="text-center mt-4">
+          <img src="img/Fuente.png" class="img-fluid rounded shadow" style="max-width: 500px;" alt="Código objeto ejemplo">
+          <p class="text-muted">Figura: Representación del proceso de generación de código objeto</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- Pie de página -->
+  <footer class="bg-primary text-white text-center py-3">
+    <p>&copy; 2025 Instituto Tecnológico Superior de Nuevo Casas Grandes - Lenguajes y Autómatas II</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
